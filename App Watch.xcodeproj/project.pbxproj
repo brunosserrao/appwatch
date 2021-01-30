@@ -11,12 +11,12 @@
 		150E890325C58F47001BD144 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 150E890225C58F47001BD144 /* Assets.xcassets */; };
 		150E890A25C58F47001BD144 /* App Watch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 150E890925C58F47001BD144 /* App Watch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		150E890F25C58F47001BD144 /* App_WatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150E890E25C58F47001BD144 /* App_WatchApp.swift */; };
-		150E891125C58F47001BD144 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150E891025C58F47001BD144 /* ContentView.swift */; };
 		150E891325C58F47001BD144 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150E891225C58F47001BD144 /* NotificationController.swift */; };
 		150E891525C58F47001BD144 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150E891425C58F47001BD144 /* NotificationView.swift */; };
 		150E891725C58F47001BD144 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150E891625C58F47001BD144 /* ComplicationController.swift */; };
 		150E891925C58F48001BD144 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 150E891825C58F48001BD144 /* Assets.xcassets */; };
 		150E891C25C58F48001BD144 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 150E891B25C58F48001BD144 /* Preview Assets.xcassets */; };
+		150E893225C59722001BD144 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150E891025C58F47001BD144 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +76,7 @@
 		150E891B25C58F48001BD144 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		150E891D25C58F48001BD144 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		150E891E25C58F48001BD144 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		15CA0DD725C5CF32009A7A3F /* galadriel.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = galadriel.mp3; path = ../../../Desktop/galadriel.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +127,7 @@
 				150E891425C58F47001BD144 /* NotificationView.swift */,
 				150E891625C58F47001BD144 /* ComplicationController.swift */,
 				150E891825C58F48001BD144 /* Assets.xcassets */,
+				15CA0DD725C5CF32009A7A3F /* galadriel.mp3 */,
 				150E891D25C58F48001BD144 /* Info.plist */,
 				150E891E25C58F48001BD144 /* PushNotificationPayload.apns */,
 				150E891A25C58F48001BD144 /* Preview Content */,
@@ -268,7 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				150E891325C58F47001BD144 /* NotificationController.swift in Sources */,
-				150E891125C58F47001BD144 /* ContentView.swift in Sources */,
+				150E893225C59722001BD144 /* ContentView.swift in Sources */,
 				150E891725C58F47001BD144 /* ComplicationController.swift in Sources */,
 				150E890F25C58F47001BD144 /* App_WatchApp.swift in Sources */,
 				150E891525C58F47001BD144 /* NotificationView.swift in Sources */,

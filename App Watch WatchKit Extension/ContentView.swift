@@ -19,7 +19,7 @@ struct ContentView: View {
     @State private var gabriela: Image = Image("gabriela");
     @State private var jujuba: Image = Image("jujuba");
     
-    
+    @State var aVAudioPlayer: AVAudioPlayer!
 
     var body: some View {
         TabView {
@@ -28,31 +28,33 @@ struct ContentView: View {
             .frame(width: 160.0, height: 160.0)
             .onTapGesture {
                 print("Cliquei na Galadriel")
-                self.playCat(cat: "galadriel")
+                playCat(cat: "galadriel")
             }
             gabriela
             .resizable()
             .frame(width: 160.0, height: 160.0)
             .onTapGesture {
                 print("Cliquei na Gabriela")
-                self.playCat(cat: "gabriela")
+                playCat(cat: "gabriela")
             }
             jujuba
             .resizable()
             .frame(width: 160.0, height: 160.0)
             .onTapGesture {
-                print("Cliquei na Galadriel")
-                self.playCat(cat: "jujuba")
+                print("Cliquei na Jujuba")
+                playCat(cat: "jujuba")
             }
         }
     }
     
     func playCat(cat: String) {
-        if let meow = Bundle.main.path(forResource: cat, ofType: "mp3") {
-            _ = try? AVAudioPlayer(contentsOf: URL (fileURLWithPath: meow))
-        }
-        else {
-            print( cat + " audio não encontrado" )
+        if let path = Bundle.main.path(forResource: cat, ofType: "mp3") {
+            do {
+                aVAudioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: path))
+                aVAudioPlayer.play()
+            } catch {
+                print( "Could not find file")
+            }
         }
     }
 }

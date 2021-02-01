@@ -17,7 +17,9 @@
 		150E891925C58F48001BD144 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 150E891825C58F48001BD144 /* Assets.xcassets */; };
 		150E891C25C58F48001BD144 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 150E891B25C58F48001BD144 /* Preview Assets.xcassets */; };
 		150E893225C59722001BD144 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150E891025C58F47001BD144 /* ContentView.swift */; };
-		15CA0DE525C5D62B009A7A3F /* galadriel.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 15CA0DE425C5D62A009A7A3F /* galadriel.mp3 */; };
+		159E9AC925C8966F00E1F5FE /* gabriela.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 159E9AC625C8966F00E1F5FE /* gabriela.mp3 */; };
+		159E9ACA25C8966F00E1F5FE /* galadriel.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 159E9AC725C8966F00E1F5FE /* galadriel.mp3 */; };
+		159E9ACB25C8966F00E1F5FE /* jujuba.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 159E9AC825C8966F00E1F5FE /* jujuba.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,7 +79,9 @@
 		150E891B25C58F48001BD144 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		150E891D25C58F48001BD144 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		150E891E25C58F48001BD144 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		15CA0DE425C5D62A009A7A3F /* galadriel.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = galadriel.mp3; path = ../../../Desktop/galadriel.mp3; sourceTree = "<group>"; };
+		159E9AC625C8966F00E1F5FE /* gabriela.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gabriela.mp3; sourceTree = "<group>"; };
+		159E9AC725C8966F00E1F5FE /* galadriel.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = galadriel.mp3; sourceTree = "<group>"; };
+		159E9AC825C8966F00E1F5FE /* jujuba.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = jujuba.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,11 +128,13 @@
 			children = (
 				150E890E25C58F47001BD144 /* App_WatchApp.swift */,
 				150E891025C58F47001BD144 /* ContentView.swift */,
+				159E9AC625C8966F00E1F5FE /* gabriela.mp3 */,
+				159E9AC725C8966F00E1F5FE /* galadriel.mp3 */,
+				159E9AC825C8966F00E1F5FE /* jujuba.mp3 */,
 				150E891225C58F47001BD144 /* NotificationController.swift */,
 				150E891425C58F47001BD144 /* NotificationView.swift */,
 				150E891625C58F47001BD144 /* ComplicationController.swift */,
 				150E891825C58F48001BD144 /* Assets.xcassets */,
-				15CA0DE425C5D62A009A7A3F /* galadriel.mp3 */,
 				150E891D25C58F48001BD144 /* Info.plist */,
 				150E891E25C58F48001BD144 /* PushNotificationPayload.apns */,
 				150E891A25C58F48001BD144 /* Preview Content */,
@@ -258,9 +264,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				159E9ACB25C8966F00E1F5FE /* jujuba.mp3 in Resources */,
+				159E9ACA25C8966F00E1F5FE /* galadriel.mp3 in Resources */,
 				150E891C25C58F48001BD144 /* Preview Assets.xcassets in Resources */,
 				150E891925C58F48001BD144 /* Assets.xcassets in Resources */,
-				15CA0DE525C5D62B009A7A3F /* galadriel.mp3 in Resources */,
+				159E9AC925C8966F00E1F5FE /* gabriela.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +445,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"App Watch WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = 8U884F2UKD;
@@ -449,6 +458,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.brunoserrao.MeuPrimeiroAppWatch.App-Watch.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
